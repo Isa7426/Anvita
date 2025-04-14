@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детский сад Анвита</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Comfortaa', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffdf7;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #f9b234;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      animation: fadeInDown 1s ease;
+    }
+    nav {
+      background: #ffd87a;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      animation: fadeIn 1.5s ease;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    nav a:hover {
+      transform: scale(1.1);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideUp 1s forwards;
+    }
+    section:nth-of-type(2) { animation-delay: 0.2s; }
+    section:nth-of-type(3) { animation-delay: 0.4s; }
+    section:nth-of-type(4) { animation-delay: 0.6s; }
+    section:nth-of-type(5) { animation-delay: 0.8s; }
+    section:nth-of-type(6) { animation-delay: 1s; }
+    section:nth-of-type(7) { animation-delay: 1.2s; }
+    section:nth-of-type(8) { animation-delay: 1.4s; }
+
+    .hero {
+      text-align: center;
+      background: #fff3c4;
+      padding: 60px 20px;
+      border-radius: 20px;
+      animation: zoomIn 1s ease;
+    }
+    .cta-button {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: #f9b234;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      background-color: #e8a524;
+      transform: scale(1.05);
+    }
+    footer {
+      background: #f9b234;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease;
+    }
+    img.gallery {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Детский сад "Анвита"
+  </header>
+  <nav>
+    <a href="#about">О нас</a>
+    <a href="#method">Методика</a>
+    <a href="#programs">Программы</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Добро пожаловать в мир заботы, тепла и знаний</h2>
+    <p>Уникальный детский сад для детей от 2 до 10 лет с авторской методикой обучения и развития</p>
+    <a href="#contacts" class="cta-button">Записаться</a>
+  </section>
+
+  <section id="about">
+    <h2>О нас</h2>
+    <p>"Анвита" — это уютное пространство, где каждый ребёнок окружён вниманием, заботой и любовью. Мы верим в потенциал каждого малыша и стремимся раскрыть его через индивидуальный подход и тёплую атмосферу.</p>
+  </section>
+
+  <section id="method">
+    <h2>Методика Анвита</h2>
+    <p>Наша авторская методика включает развитие логики, речи, эмоционального интеллекта и творческого мышления. Программы адаптированы под возраст ребёнка и учитывают его индивидуальные особенности.</p>
+  </section>
+
+  <section id="programs">
+    <h2>Программы обучения</h2>
+    <ul>
+      <li>Развивающие занятия для малышей</li>
+      <li>Подготовка к школе</li>
+      <li>Английский язык, музыка, логика</li>
+      <li>Творческие мастерские и театральные занятия</li>
+    </ul>
+  </section>
+
+  <section id="reviews">
+    <h2>Отзывы родителей</h2>
+    <p>"Спасибо Анвите за невероятную заботу о нашем сыне! Он стал более уверенным и любознательным." — Анна К.</p>
+    <p>"Нравится атмосфера и педагоги. Чувствуется индивидуальный подход к детям." — Максим и Лена</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Галерея</h2>
+    <img src="https://via.placeholder.com/800x400.png?text=Анвита+в+действии" alt="Галерея Анвиты" class="gallery">
+  </section>
+
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Адрес: г. Бишкек, ул. Примерная, 12</p>
+    <p>Телефон: +996 700 000 000</p>
+    <p>WhatsApp / Telegram: @anvita_kg</p>
+    <p>Email: info@anvita.kg</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Детский сад "Анвита". Все права защищены.
+  </footer>
+</body>
+</html>
